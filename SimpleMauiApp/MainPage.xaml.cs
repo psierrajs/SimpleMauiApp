@@ -21,8 +21,6 @@ namespace SimpleMauiApp
             
             UserCollectionView.ItemsSource = users;
 
-            
-            UserCollectionView.IsVisible = true;
 
         }
 

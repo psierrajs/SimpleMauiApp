@@ -8,7 +8,6 @@
         <Label Text="User List"
                />
         <CollectionView x:Name="UserCollectionView"
-                IsVisible="True"
                 VerticalOptions="FillAndExpand">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
@@ -23,6 +22,7 @@
         </CollectionView>
 
         <Button Text="Show Users"
+                Margin="0,0,0,20"
                 Clicked="Button_Clicked"
                 />
 
