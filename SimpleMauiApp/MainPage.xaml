@@ -3,33 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SimpleMauiApp.MainPage">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="Beige">
        
         <Label Text="User List"
                />
-
-        
-        <Button Text="Show Users"
-                Clicked="Button_Clicked"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"/>
-
-        <!-- CollectionView to display the list of users, initially hidden -->
         <CollectionView x:Name="UserCollectionView"
-                        IsVisible="True"
-                        VerticalOptions="FillAndExpand">
+                IsVisible="True"
+                VerticalOptions="FillAndExpand">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Padding="10">
+                    <StackLayout >
                         <Label Text="{Binding Name}"
-                               FontSize="18"
-                               FontAttributes="Bold"/>
+                       />
                         <Label Text="{Binding Email}"
-                               TextColor="Gray"/>
+                       TextColor="Gray"/>
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+
+        <Button Text="Show Users"
+                Clicked="Button_Clicked"
+                />
+
+        
+        
     </StackLayout>
 
 </ContentPage>
