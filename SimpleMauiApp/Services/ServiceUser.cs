@@ -15,7 +15,8 @@ namespace SimpleMauiApp.Services
             {
                 new User("Alicia", "alicia@gmail.com"),
                 new User("Pepe", "pepe@gmail"),
-                new User("Manuel", "manuel@gmail.com")
+                new User("Manuel", "manuel@gmail.com"),
+                new User("Paco", "paco@gmail.com")
             };
         }
     }
